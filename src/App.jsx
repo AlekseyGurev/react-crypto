@@ -1,9 +1,18 @@
-import { DatePicker } from 'antd';
+import { Layout } from 'antd';
+import AppHeader from './components/layout/AppHeader';
+import AppSider from './components/layout/appSider/AppSider';
+import AppContent from './components/layout/AppContent';
 
 export default function App() {
 	return (
 		<>
-			<DatePicker />
+			<Layout>
+				<AppHeader />
+				<Layout>
+					<AppSider />
+					<AppContent />
+				</Layout>
+			</Layout>
 		</>
 	);
 }
